@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="pic1_name">Working with PC</string>
+    <string name ="pic2_name">Construction Site</string>
+    <string name ="pic3_name">Green Agriculture</string>
+    <string name = "pic4_name">Tech Factory</string>
+    <string name = "pic5_name">Blue Sky</string>
+    <string name = "pic6_name">Coding Screen</string>
+</resources>

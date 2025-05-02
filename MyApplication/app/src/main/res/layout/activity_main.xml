@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextText1"
+            android:layout_width="172dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="64dp"
+            android:autofillHints="first name"
+            android:ems="10"
+            android:hint="@string/first_name"
+            android:inputType="text"
+            android:textColorHint="#546E7A"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="182dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints="last name"
+            android:ems="10"
+            android:hint="@string/last_name"
+            android:inputType="text"
+            android:textColorHint="#546E7A"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextText1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextText1"
+            tools:ignore="LabelFor" />
+
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="176dp"
+            android:autofillHints="birth date"
+            android:ems="10"
+            android:hint="@string/birth_date"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="202dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="324dp"
+            android:autofillHints="country name"
+            android:ems="10"
+            android:hint="@string/country_name"
+            android:inputType="text"
+            android:textColorHint="#546E7A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="135dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="324dp"
+            android:text="@string/button_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+

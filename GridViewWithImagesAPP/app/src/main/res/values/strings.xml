@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GridView-With-Images-APP</string>
+    <string name="apple_name">Apple Image</string>
+    <string name="apple_price">$1.2</string>
+    <string name="banana_name">Banana Image</string>
+    <string name="banana_price">$0.26</string>
+    <string name="cherry_name">Cherry Image</string>
+    <string name="cherry_price">$1.22</string>
+    <string name="fruit_image">Fruit Image</string>
+</resources>
