@@ -21,13 +21,33 @@ class MainActivity : AppCompatActivity() {
 
         val gridView = findViewById<GridView>(R.id.gridView)
 
-        val fruitList = listOf(
-            FruitItem(R.drawable.apple_image, getString(R.string.apple_name), getString(R.string.apple_price)),
-            FruitItem(R.drawable.banana_image, getString(R.string.banana_name), getString(R.string.banana_price)),
-            FruitItem(R.drawable.cherry_image, getString(R.string.cherry_name), getString(R.string.cherry_price))
+        val namePricePairs = listOf(
+            "Apple" to "$1.99",
+            "Banana" to "$0.99",
+            "Orange" to "$2.29",
+            "Strawberry" to "$3.99",
+            "Grapes" to "$2.49",
+            "Mango" to "$1.89",
+            "Pineapple" to "$3.29",
+            "Kiwi" to "$2.79",
+            "Watermelon" to "$4.99",
+            "Blueberry" to "$3.49",
+            "Peach" to "$2.39",
+            "Cherry" to "$3.59"
         )
+
+        val imageIds = listOf(
+            R.drawable.apple, R.drawable.banana, R.drawable.orange, R.drawable.strawberry,
+            R.drawable.grapes, R.drawable.mango, R.drawable.pineapple, R.drawable.kiwi,
+            R.drawable.watermelon, R.drawable.blueberry, R.drawable.peach, R.drawable.cherry
+        )
+
+        val fruitList = namePricePairs.mapIndexed { index, pair ->
+            FruitItem(imageIds[index], pair.first, pair.second)
+        }
 
         val adapter = FruitAdapter(this, fruitList)
         gridView.adapter = adapter
+
     }
 }
